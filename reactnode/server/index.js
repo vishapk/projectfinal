@@ -61,18 +61,18 @@ app.post("/api", callPythonScript);
 function callPythonScript(req, res) {
       
   const { name } = req.body;
-  console.log(name);
+  //console.log(name);
 
   const {spawn} = require("child_process");
-  console.log(name);
+  console.log("\n\n\nBeginning Summarization\n\n\n\n");
     
-  var python = spawn('python',["C:/reactnode/server/inference.py",
+  var python = spawn('python',["C:/projectfinal/reactnode/server/scripts/inference.py",
       name] );
 
   python.stdout.on('data', (data) => {
     console.log("Completed Summarization");
     var summarizedP=data.toString();
-    console.log(data);
+    console.log(summarizedP);
     res.json({summary: summarizedP});
   } );
     
