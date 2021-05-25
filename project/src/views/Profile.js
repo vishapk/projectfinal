@@ -115,8 +115,9 @@ export default function Profile() {
                         id="patentbody"
                         name="patentbody"
                         placeholder={formData} onChange={handleChange}
-                        className="px-3 py-3 placeholder-gray-900 text-black bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150 autoresizing overscroll-y:scroll"
+                        className="overflow-y-auto px-3 py-3 placeholder-gray-900 text-black bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150 autoresizing"
                         rows="6"
+                        
                       />
                     </div>
                     
@@ -141,7 +142,7 @@ export default function Profile() {
                           id="summarybody"
                           value={summary}
                           onChange={handleSummaryChange}
-                          className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150 autoresizing"
+                          className="overflow-y-auto px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150 autoresizing"
                           rows="6"
                         >
                         </textarea>  
